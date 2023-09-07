@@ -1,0 +1,66 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+.contanar .row{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.content{
+	width:350px;
+	padding:20px;
+	background:green;
+	border-radius:10px;
+	margin:20px;
+	animation-name:color;
+	animation-duration:2s;
+	animation-iteration-count:infinite;
+}
+.content:hover{
+	background-image:url(service-bg.svg);
+	background-position:center;
+	background-size:cover;
+	background-color:rgba(0, 166, 92, 1);
+}
+.content i{
+	font-size:40px;
+	padding:20px;
+	color:white;
+	background:crimson;
+	border-radius:50%;
+	position:relative;
+}
+.content h1{
+	margin-top:20px;
+	padding:10px 0;
+	
+}
+.content p{
+	padding:10px;
+	display:inline-block;
+}
+.content:hover p{
+	color:white;
+}
+.content i::after{
+	position:absolute;
+	content:"";
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background-image:url(pattern-3.png);
+	animation-name:round;
+	animation-duration:20s;
+	animation-iteration-count:infinite;
+}
+@keyframes round{
+	0%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(360deg);
+	}
+}
